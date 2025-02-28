@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/background_light">
+
+        <!-- Nom de l'étudiant -->
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'étudiant"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <!-- Matière -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <!-- Icône Matière -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:layout_marginEnd="6dp"
+                app:tint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matière : "
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <!-- Date et Statut -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Icône Date -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_today"
+                android:layout_marginEnd="6dp"
+                app:tint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/absenceDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 12-02-2025"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <!-- Icône Statut -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                android:layout_marginEnd="6dp"
+                app:tint="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/absenceStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Présent"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <!-- Message d'alerte pour les absences -->
+        <TextView
+            android:id="@+id/absenceWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Attention : 2 absences !"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_dark"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

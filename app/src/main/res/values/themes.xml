@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Absenceviewer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Absenceviewer" parent="Base.Theme.Absenceviewer" />
+
+        <!-- Thème clair -->
+        <style name="Theme.AbsenceViewer" parent="Theme.Material3.Light">
+            <item name="colorPrimary">#6200EE</item>
+            <item name="colorPrimaryVariant">#3700B3</item>
+            <item name="colorOnPrimary">#FFFFFF</item>
+            <item name="android:windowBackground">#FFFFFF</item> <!-- Fond blanc -->
+        </style>
+
+
+</resources>
